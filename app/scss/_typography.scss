@@ -1,0 +1,10 @@
+h1 {
+  line-height: 1.5;
+  font-size: 3.5rem;
+  @media #{$mq-1000-down} {
+    font-size: 3rem;
+  }
+}
+p {
+  line-height: 1.5;
+}

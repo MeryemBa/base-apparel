@@ -1,0 +1,125 @@
+@import "variables";
+@import "colors";
+@import "global";
+@import "typography";
+
+.container {
+  padding: 0;
+  padding-left: 5rem;
+  height: 100vh;
+  max-width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 5fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "d1 d2" "d3 d2";
+
+  @media #{$mq-1000-down} {
+    display: block;
+    padding: 0;
+  }
+}
+
+.div1 {
+  grid-area: d1;
+  padding: 3rem 3rem;
+
+  width: 85%;
+  text-align: left;
+}
+
+.div2 {
+  grid-area: d2;
+  background-image: url(../images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media #{$mq-1000-down} {
+    height: 45%;
+    width: 100%;
+    background-image: url(../images/hero-mobile.jpg);
+  }
+}
+
+.div3 {
+  grid-area: d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 85%;
+  padding: 3rem 3rem;
+
+  text-align: left;
+  p {
+    line-height: 1.5;
+    max-width: 70%;
+    width: 80%;
+    min-width: 100%;
+    text-align: inherit;
+  }
+  @media #{$mq-1000-down} {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  @media #{$mq-480-down} {
+    padding: 50px 15px;
+    width: 100%;
+  }
+}
+
+.form {
+  width: 80%;
+  min-width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  position: relative;
+  margin: 20px 0 10px 0;
+
+  & input {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border-radius: 40px;
+    border: 1px;
+    border-color: #{$mainColor};
+    border-style: double;
+    padding: 0 30px;
+    outline: none;
+    font-size: 15px;
+    padding-right: 150px;
+    &::placeholder {
+      color: #{$mainColor};
+      opacity: 0.6;
+    }
+  }
+}
+.big-heading {
+  font-weight: 300;
+  padding: 5px 10px;
+  padding-left: 0;
+  letter-spacing: 9px;
+
+  text-transform: uppercase;
+  & span {
+    color: #{$DarkGrayishRed};
+    font-weight: 700;
+    display: block;
+  }
+}
+.icon-error {
+  position: absolute;
+  top: 35%;
+  right: 110px;
+  visibility: hidden;
+}
+
+.error_holder {
+  padding: 8px 30px;
+  color: #{$SoftRed};
+  visibility: hidden;
+}

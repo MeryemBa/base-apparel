@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  color: #{$mainColor};
+  font-size: 16px;
+}
+.btn {
+  box-shadow: 5px 5px 20px #{$mainColor};
+  height: 50px;
+  width: 100px;
+  border-radius: 40px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-image: #{$btnGradient};
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    background-image: #{$btnGradientHover};
+  }
+}
