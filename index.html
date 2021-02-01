@@ -10,45 +10,42 @@
         <meta name="theme-color" content="#1843c1" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
 
-        <title></title>
+       <title>Base Apparel</title>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+        
         
         <!-- CSS File -->
-        <link rel="stylesheet" href="dist/style.css?cb=1612131015748">
+        <link rel="stylesheet" href="dist/style.css?cb=1612219070263">
+        <!-- JavaScript File -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+        <script src="dist/all.js?cb=1612219070263" defer></script>
     </head>
     <body>
         <div class="container">
-            <div class="div1">
-            <img src="images/logo.svg" class="logo" alt="">
+            <nav class="header">
+            <img src="images/logo.svg" class="logo" alt="base apparel logo">
+            </nav>
+            <div class="image_container">
             </div>
-            <div class="div2">
-            </div>
-            <div class="div3">
-              <h1 class="big-heading"> We're <span>coming</span><span>soon</span></h1>
+            <main class="content_container">
+              <h1 class="big_heading big_heading_item"> We're <span class="big_heading_item">coming</span><span class="big_heading_item">soon</span></h1>
         
-              <p>  Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+              <p class="content_container_item">  Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
         
         
         
-              <div class="form">
+              <form class="form content_container_item">
                   <input type="text" class="email" name="email" value="" placeholder="Email Address">
-                <button type="button" name="button" class="btn"><img src="images/icon-arrow.svg" alt=""> </button>
+                <button type="button" name="button" class="btn"><img class="icon-arrow" src="images/icon-arrow.svg" alt=""> </button>
                 <img src="images/icon-error.svg" class="icon-error" alt="">
-                  <h6 class="error_holder">Please provide a valid email address</h6>
+                  <h6 class="message-holder"></h6>
         
-              </div>
+              </form>
         
-            </div>
+            </main>
         
           </div>
         
-        <!-- JavaScript File -->
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-        <script src="dist/all.js?cb=1612131015748"></script>
+   
     </body>
 </html>

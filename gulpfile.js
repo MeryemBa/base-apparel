@@ -31,10 +31,7 @@ function scssTask(){
 
 // JS task: concatenates and uglifies JS files to script.js
 function jsTask(){
-    return src([
-        files.jsPath
-        //,'!' + 'includes/js/jquery.min.js', // to exclude any specific files
-        ])
+    return src([ files.jsPath ])
         .pipe(concat('all.js'))
         .pipe(uglify())
         .pipe(dest('dist')
