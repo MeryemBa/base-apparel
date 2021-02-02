@@ -4,9 +4,11 @@
 
 You can fine the live version of this project [here](https://meryemba.github.io/base-apparel/).
 
+!["Base Apparel"](https://github.com/MeryemBa/base-apparel/blob/main/images/baseApperal.png)
+
 ## Description
 
-This project is a simple Landing page for the Base Apparel shop in which I practice more on the use of Gulp.js for automating tasks. Also, I used sass for the styling and GSAP for the loading animation. The main feature in this project is email validation using regular expressions.
+This project is a simple responive landing page for the Base Apparel shop in which I practice more on the use of Gulp.js for automating tasks. Also, I used sass for the styling and GSAP for the loading animation. The main feature in this project is email validation using regular expressions.
 
 ## Technologey
 
